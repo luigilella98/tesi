@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tesi.aux
+A level-1 auxiliary file: Pagina_Iniziale.aux
+A level-1 auxiliary file: Introduzione.aux
+A level-1 auxiliary file: Capitolo_1.aux
+A level-1 auxiliary file: Capitolo_2.aux
+A level-1 auxiliary file: Capitolo_3.aux
+A level-1 auxiliary file: Conclusione.aux
+The style file: ieeetr.bst
+Database file #1: Bibliografia.bib
+Warning--I didn't find a database entry for "6461195"
+Warning--I didn't find a database entry for "telecom_nfv"
+Warning--I didn't find a database entry for "NSintro"
+Warning--I didn't find a database entry for "NS5g"
+Warning--I didn't find a database entry for "5g5"
+Warning--I didn't find a database entry for "mn2"
+Warning--I didn't find a database entry for "mn3"
+Warning--I didn't find a database entry for "of"
+Warning--I didn't find a database entry for "ovs"
+Warning--I didn't find a database entry for "ws"
+You've used 6 entries,
+            1876 wiz_defined-function locations,
+            528 strings with 5153 characters,
+and the built_in function-call counts, 1459 in all, are:
+= -- 74
+> -- 170
+< -- 0
++ -- 59
+- -- 53
+* -- 141
+:= -- 283
+add.period$ -- 7
+call.type$ -- 6
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 54
+empty$ -- 106
+format.name$ -- 53
+if$ -- 298
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 22
+num.names$ -- 6
+pop$ -- 26
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 0
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 6
+width$ -- 7
+write$ -- 51
+(There were 10 warnings)

@@ -1,0 +1,147 @@
+\documentclass[a4paper,12pt,onecolumn,twoside,openright]{book}
+
+
+
+\usepackage[english, italian]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage[bookmarks=true, hidelinks]{hyperref}
+
+\usepackage{color}
+\usepackage[italian]{nomencl}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{listings}
+
+%-----python------------------
+
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.8}
+
+% Python style for highlighting
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{deepblue},
+	commentstyle=\color{deepred},
+	stringstyle=\color{deepgreen},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3,
+	backgroundcolor = \color{lightgray}
+}
+%--------Lettere greche non in italic----------------------------
+\usepackage{upgreek}
+
+%--------Faccio andare a capo gli url anche con - e / -----------
+\usepackage{url}
+
+%----------------------------------------------------------------
+
+\setlength{\topmargin}{0.0cm} \setlength{\evensidemargin}{+0.95cm}
+\setlength{\oddsidemargin}{+0.95 true cm}
+
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+
+\patchcmd{\@makechapterhead}{50\p@}{\chapheadtopskip}{}{}% Space from top of page to CHAPTER X
+\patchcmd{\@makeschapterhead}{50\p@}{\chapheadtopskip}{}{}% Space from top of page to CHAPTER X
+
+\makeatother
+\newlength{\chapheadtopskip}\setlength{\chapheadtopskip}{20pt}
+
+%----------------------------------------------------------------
+
+%------Imposto larghezza ed altezza del testo--------------------
+\setlength{\textwidth}{14cm} \setlength{\textheight}{22cm}
+\setlength{\headheight}{26pt}
+%----------------------------------------------------------------
+
+%------Setto interlineare ad 1 riga e 1/2------------------------
+\linespread{1.3}
+
+%----------------------------------------------------------------
+
+%------------------------------------------------------------------
+
+
+%\makenomenclature
+
+\begin{document}
+	
+	\selectlanguage{Italian}
+	
+	\hypersetup{pageanchor=false}
+	\include{Pagina_Iniziale}
+	
+	%------ Parole Chiave ------------------------------------------------
+	
+	\newpage
+	\thispagestyle{empty} $\;$
+	\newpage
+	
+	\setcounter{tocdepth}{3}
+	%----------------------------------------------------------------------------------
+	
+	\hypersetup{pageanchor=true}
+	
+	\pagenumbering{roman}
+	
+	
+	%------------------------Creo l'indice---------------------------------------------
+	
+	\tableofcontents \cleardoublepage
+	
+	\listoffigures \cleardoublepage
+	
+%	\listoftables \cleardoublepage
+	
+	%-------- Setto il contatore delle pagine ad 1----------------------
+	\setcounter{page}{1}
+	%------------------------------------------------------------------
+	
+	%------ Imposto il contatore delle pagine --------------------------
+	%       in formato arabico
+	\pagenumbering{arabic}
+	
+	%-----  Includo i capitoli e appendici -----------------------------
+	
+	\include{Introduzione}
+	\include{Capitolo_1}
+	\include{Capitolo_2}
+	\include{Capitolo_3}
+	\include{Conclusione}
+	
+	\bibliographystyle{ieeetr}
+	\bibliography{Bibliografia}
+	
+	%-----Aggiungo all'indice la voce Bibliografia ---------------------
+	%%\special{pdf: out 0 << /Title (Bibliografia) /Dest [@thispage/FitH @ypos ]>>}
+	\phantomsection
+	\addcontentsline{toc}{chapter}{Bibliografia}
+	%-------------------------------------------------------------------
+	
+	\newpage
+	\thispagestyle{empty}
+	
+\end{document}

@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{imagenet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' {\em NIPS}, 2012.
+
+\bibitem{KITTI}
+A.~Geiger, P.~Lenz, C.~Stiller, and R.~Urtasun, ``Vision meets robotics: The
+  kitti dataset,'' {\em The international Journal of Robotic Research}, 2013.
+
+\bibitem{Matter}
+A.~Chang, A.~Dai, T.~Funkhouser, M.~Halber, M.~Nießner, M.~Savva, S.~Song,
+  A.~Zeng, and Y.~Zhang, ``Matterport3d: Learning from rgb-d data in indoor
+  environments,'' {\em International Conference on 3D Vision (3DV)}, 2017.
+
+\bibitem{Replica}
+J.~Straub, T.~Whelan, L.~Ma, Y.~Chen, E.~Wijmans, S.~Green, J.~J. Engel,
+  R.~Mur-Artal, C.~Ren, S.~Verma, A.~Clarkson, M.~Yan, B.~Budge, Y.~Yan,
+  X.~Pan, J.~Yon, Y.~Zou, K.~Leon, N.~Carter, J.~Briales, T.~Gillingham,
+  E.~Mueggler, L.~Pesqueira, M.~Savva, D.~Batra, H.~M. Strasdat, R.~D. Nardi,
+  M.~Goesele, S.~Lovegrove, and R.~Newcombe, ``The replica dataset: A digital
+  replica of indoor spaces,'' {\em arXiv preprint arXiv:1906.05797}, 2019.
+
+\bibitem{SL}
+P.~Z. Ramirez, C.~Paternesi, L.~D. Luigi, L.~Lella, D.~D. Gregorio, and L.~D.
+  Stefano, ``Shooting labels: 3d semantic labeling by virtual reality,'' {\em
+  IEEE AIVR}, 2020.
+
+\bibitem{libro1}
+F.~Granelli, {\em Computing in Communication Networks, From Theory to
+  Practice}.
+\newblock Frank Fitzek and Fabrizio Granelli and Patrick Seeling, 2020.
+
+\end{thebibliography}
