@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{imagenet}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
@@ -26,9 +26,36 @@ P.~Z. Ramirez, C.~Paternesi, L.~D. Luigi, L.~Lella, D.~D. Gregorio, and L.~D.
   Stefano, ``Shooting labels: 3d semantic labeling by virtual reality,'' {\em
   IEEE AIVR}, 2020.
 
-\bibitem{libro1}
-F.~Granelli, {\em Computing in Communication Networks, From Theory to
-  Practice}.
-\newblock Frank Fitzek and Fabrizio Granelli and Patrick Seeling, 2020.
+\bibitem{AI}
+S.~Russel and P.~Norving, {\em Artificial Intelligence: a modern approch}.
+\newblock Prentice Hall, 2003.
+
+\bibitem{neuralnet}
+``Neural network.''
+\newblock
+  \url{https://deepai.org/machine-learning-glossary-and-terms/neural-network}.
+
+\bibitem{polimi}
+``Alla scoperta del deep learning: significato, esempi e applicazioni.''
+\newblock
+  \url{https://blog.osservatori.net/it_it/deep-learning-significato-esempi-applicazioni}.
+
+\bibitem{ML}
+S.~Raschka, {\em Machine Learning con python}.
+\newblock Apogeo Editore, 2015.
+
+\bibitem{Geirhos2017a}
+R.~Geirhos, D.~H.~J. Janssen, H.~H. Schütt, J.~Rauber, M.~Bethge, and F.~A.
+  Wichmann, ``Comparing deep neural networks against humans: object recognition
+  when the signal gets weaker,'' {\em arXiv}, 2017.
+
+\bibitem{inbook}
+M.~Onyesolu and U.~Eze, {\em Understanding Virtual Reality Technology: Advances
+  and Applications}.
+\newblock 2011.
+
+\bibitem{steamvr}
+``Stemvr documentazione.''
+\newblock \url{https://partner.steamgames.com/doc/features/steamvr/info}.
 
 \end{thebibliography}

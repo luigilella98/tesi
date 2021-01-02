@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.15)  20 DEC 2020 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.15)  2 JAN 2021 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,9 +544,12 @@ File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 )
 (./tesi.aux (./Pagina_Iniziale.aux) (./Introduzione.aux) (./Capitolo_1.aux
 
-LaTeX Warning: Label `fig:arch1' multiply defined.
+LaTeX Warning: Label `fig:mlprocess' multiply defined.
 
-) (./Capitolo_2.aux) (./Capitolo_3.aux) (./Conclusione.aux))
+
+LaTeX Warning: Label `fig:types' multiply defined.
+
+) (./Capitolo_2.aux) (./Capitolo_3.aux) (./Capitolo_4.aux) (./Conclusione.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -567,7 +570,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
 LaTeX Info: Redefining \it@ocap on input line 90.
 LaTeX Info: Redefining \it@ccap on input line 90.
-
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count307
@@ -648,20 +650,23 @@ Overfull \hbox (4.07025pt too wide) in paragraph at lines 30--38
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 106.
 
-(./tesi.toc [1
-
-])
+(./tesi.toc)
 \tf@toc=\write4
 \openout4 = `tesi.toc'.
 
- [2] (./tesi.lof [3
+ [1
 
+] [2
 
-])
+] (./tesi.lof)
 \tf@lof=\write5
 \openout5 = `tesi.lof'.
 
- [4]
+ [3
+
+] [4
+
+]
 \openout2 = `Introduzione.aux'.
 
  (./Introduzione.tex)
@@ -680,7 +685,6 @@ Underfull \vbox (badness 2707) has occurred while \output is active []
  [1
 
 
-
 ]
 [2]
 \openout2 = `Capitolo_1.aux'.
@@ -688,12 +692,7 @@ Underfull \vbox (badness 2707) has occurred while \output is active []
  (./Capitolo_1.tex
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
-
- []
-
-
-Underfull \vbox (badness 5924) has occurred while \output is active []
+Underfull \vbox (badness 1527) has occurred while \output is active []
 
  [3
 
@@ -701,327 +700,71 @@ Underfull \vbox (badness 5924) has occurred while \output is active []
 
 
 ]
+<../immagini/ReteNeu.png, id=170, 1927.2pt x 1010.77625pt>
+File: ../immagini/ReteNeu.png Graphic file (type png)
+<use ../immagini/ReteNeu.png>
+Package pdftex.def Info: ../immagini/ReteNeu.png  used on input line 19.
+(pdftex.def)             Requested size: 318.67207pt x 167.12561pt.
 
-LaTeX Warning: Citation `6461195' on page 4 undefined on input line 18.
-
-<../immagini/552578-sdn-graphic-blue-910.png, id=243, 913.4125pt x 1054.94125pt
->
-File: ../immagini/552578-sdn-graphic-blue-910.png Graphic file (type png)
-<use ../immagini/552578-sdn-graphic-blue-910.png>
-Package pdftex.def Info: ../immagini/552578-sdn-graphic-blue-910.png  used on i
-nput line 23.
-(pdftex.def)             Requested size: 239.00557pt x 276.03284pt.
-
-LaTeX Warning: Citation `telecom_nfv' on page 4 undefined on input line 30.
-
-<../immagini/nfv.png, id=244, 647.41875pt x 484.05844pt>
-File: ../immagini/nfv.png Graphic file (type png)
-<use ../immagini/nfv.png>
-Package pdftex.def Info: ../immagini/nfv.png  used on input line 33.
-(pdftex.def)             Requested size: 318.67207pt x 238.26169pt.
-[4 <../immagini/552578-sdn-graphic-blue-910.png (PNG copy)>]
-Underfull \vbox (badness 1609) has occurred while \output is active []
-
- [5 <../immagini/nfv.PNG>]
-
-LaTeX Warning: Citation `NSintro' on page 6 undefined on input line 55.
-
-<../immagini/510px-Generic_5G_network_slicing_framework.svg.png, id=257, 511.91
-25pt x 368.37625pt>
-File: ../immagini/510px-Generic_5G_network_slicing_framework.svg.png Graphic fi
-le (type png)
-<use ../immagini/510px-Generic_5G_network_slicing_framework.svg.png>
-Package pdftex.def Info: ../immagini/510px-Generic_5G_network_slicing_framework
-.svg.png  used on input line 58.
-(pdftex.def)             Requested size: 358.50227pt x 257.97964pt.
-<../immagini/nslc.png, id=258, 678.28406pt x 397.485pt>
-File: ../immagini/nslc.png Graphic file (type png)
-<use ../immagini/nslc.png>
-Package pdftex.def Info: ../immagini/nslc.png  used on input line 65.
-(pdftex.def)             Requested size: 398.33858pt x 233.42845pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--72
+Underfull \hbox (badness 10000) in paragraph at lines 12--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--72
+Underfull \hbox (badness 10000) in paragraph at lines 12--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--72
+Underfull \hbox (badness 10000) in paragraph at lines 12--23
 
  []
 
-[6] [7 <../immagini/510px-Generic_5G_network_slicing_framework.svg.png> <../imm
-agini/nslc.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+[4] [5 <../immagini/ReteNeu.png>]
+<../immagini/mlprocess.png, id=187, 497.4585pt x 177.0615pt>
+File: ../immagini/mlprocess.png Graphic file (type png)
+<use ../immagini/mlprocess.png>
+Package pdftex.def Info: ../immagini/mlprocess.png  used on input line 34.
+(pdftex.def)             Requested size: 438.17487pt x 155.96587pt.
 
+Overfull \hbox (39.83629pt too wide) in paragraph at lines 34--35
+ [][] 
  []
 
-<../immagini/arch1.png, id=271, 611.28375pt x 345.54094pt>
-File: ../immagini/arch1.png Graphic file (type png)
-<use ../immagini/arch1.png>
-Package pdftex.def Info: ../immagini/arch1.png  used on input line 84.
-(pdftex.def)             Requested size: 358.50227pt x 202.64943pt.
-<../immagini/arch2.png, id=272, 624.08156pt x 345.54094pt>
-File: ../immagini/arch2.png Graphic file (type png)
-<use ../immagini/arch2.png>
-Package pdftex.def Info: ../immagini/arch2.png  used on input line 90.
-(pdftex.def)             Requested size: 358.50227pt x 198.49995pt.
-
-LaTeX Warning: Citation `NS5g' on page 8 undefined on input line 97.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--101
-
- []
-
-[8] [9 <../immagini/arch1.PNG> <../immagini/arch2.PNG>] [10]
-<../immagini/vehicle-to-everything-slide12.png, id=287, 722.7pt x 542.025pt>
-File: ../immagini/vehicle-to-everything-slide12.png Graphic file (type png)
-<use ../immagini/vehicle-to-everything-slide12.png>
-Package pdftex.def Info: ../immagini/vehicle-to-everything-slide12.png  used on
- input line 119.
-(pdftex.def)             Requested size: 298.75392pt x 224.06776pt.
-<../immagini/0_7i2ht2hZquYBwybh.jpg, id=288, 1806.75pt x 1747.52875pt>
-File: ../immagini/0_7i2ht2hZquYBwybh.jpg Graphic file (type jpg)
-<use ../immagini/0_7i2ht2hZquYBwybh.jpg>
-Package pdftex.def Info: ../immagini/0_7i2ht2hZquYBwybh.jpg  used on input line
- 125.
-(pdftex.def)             Requested size: 298.75392pt x 288.9431pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--129
-
- []
-
-[11] [12 <../immagini/vehicle-to-everything-slide12.png> <../immagini/0_7i2ht2h
-ZquYBwybh.jpg>]
-
-LaTeX Warning: Citation `5g5' on page 13 undefined on input line 136.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 138--130
-
- []
-
-[13]
-\openout2 = `Capitolo_2.aux'.
-
- (./Capitolo_2.tex [14
-
-
-
-
-]
-Capitolo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
-
- []
-
-
-LaTeX Warning: Citation `mn2' on page 15 undefined on input line 12.
-
-<../immagini/mn.png, id=307, 414.04688pt x 131.74219pt>
-File: ../immagini/mn.png Graphic file (type png)
-<use ../immagini/mn.png>
-Package pdftex.def Info: ../immagini/mn.png  used on input line 21.
-(pdftex.def)             Requested size: 398.33858pt x 126.74846pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
-
- []
-
-[15] [16 <../immagini/mn.PNG>]
-<../immagini/mn/4b.png, id=317, 359.09157pt x 511.9125pt>
-File: ../immagini/mn/4b.png Graphic file (type png)
-<use ../immagini/mn/4b.png>
-Package pdftex.def Info: ../immagini/mn/4b.png  used on input line 47.
-(pdftex.def)             Requested size: 386.3889pt x 550.86543pt.
+[6 <../immagini/mlprocess.PNG>]
+<../immagini/matterport3d.png, id=194, 1797.71625pt x 530.98375pt>
+File: ../immagini/matterport3d.png Graphic file (type png)
+<use ../immagini/matterport3d.png>
+Package pdftex.def Info: ../immagini/matterport3d.png  used on input line 49.
+(pdftex.def)             Requested size: 398.33858pt x 117.65129pt.
+<../immagini/types.png, id=196, 481.8pt x 124.21407pt>
+File: ../immagini/types.png Graphic file (type png)
+<use ../immagini/types.png>
+Package pdftex.def Info: ../immagini/types.png  used on input line 59.
+(pdftex.def)             Requested size: 398.33858pt x 102.6996pt.
+ [7 <../immagini/matterport3d.png>]
+<../immagini/semantic_segmentation.png, id=203, 533.5935pt x 430.60875pt>
+File: ../immagini/semantic_segmentation.png Graphic file (type png)
+<use ../immagini/semantic_segmentation.png>
+Package pdftex.def Info: ../immagini/semantic_segmentation.png  used on input l
+ine 66.
+(pdftex.def)             Requested size: 398.33858pt x 321.47081pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17]
 
-LaTeX Warning: Text page 18 contains only floats.
-
-
-Overfull \vbox (0.60487pt too high) has occurred while \output is active []
-
-
-[18 <../immagini/mn/4b.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 70--74
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-4.
-(c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [19]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
-
-LaTeX Warning: Citation `mn3' on page 20 undefined on input line 112.
-
-<../immagini/of.png, id=353, 466.74374pt x 391.4625pt>
-File: ../immagini/of.png Graphic file (type png)
-<use ../immagini/of.png>
-Package pdftex.def Info: ../immagini/of.png  used on input line 121.
-(pdftex.def)             Requested size: 338.59021pt x 283.9912pt.
-
-LaTeX Warning: Citation `of' on page 20 undefined on input line 126.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--130
-
- []
-
-[20] [21 <../immagini/of.png>]
-
-LaTeX Warning: Citation `ovs' on page 22 undefined on input line 140.
-
-[22]
-<../immagini/mn/ping.png, id=375, 289.83281pt x 111.41624pt>
-File: ../immagini/mn/ping.png Graphic file (type png)
-<use ../immagini/mn/ping.png>
-Package pdftex.def Info: ../immagini/mn/ping.png  used on input line 154.
-(pdftex.def)             Requested size: 338.59021pt x 130.16777pt.
- [23 <../immagini/mn/ping.PNG>]
-<../immagini/mn/nmap.png, id=381, 289.08pt x 109.91063pt>
-File: ../immagini/mn/nmap.png Graphic file (type png)
-<use ../immagini/mn/nmap.png>
-Package pdftex.def Info: ../immagini/mn/nmap.png  used on input line 168.
-(pdftex.def)             Requested size: 338.59021pt x 128.7408pt.
- [24 <../immagini/mn/nmap.PNG>]
-<../immagini/mn/iperf.png, id=388, 368.1253pt x 173.14688pt>
-File: ../immagini/mn/iperf.png Graphic file (type png)
-<use ../immagini/mn/iperf.png>
-Package pdftex.def Info: ../immagini/mn/iperf.png  used on input line 189.
-(pdftex.def)             Requested size: 338.59021pt x 159.26799pt.
-
-
-LaTeX Warning: Citation `ws' on page 25 undefined on input line 200.
-
-<../immagini/mn/wireshark1.png, id=389, 603.0028pt x 430.60875pt>
-File: ../immagini/mn/wireshark1.png Graphic file (type png)
-<use ../immagini/mn/wireshark1.png>
-Package pdftex.def Info: ../immagini/mn/wireshark1.png  used on input line 203.
-
-(pdftex.def)             Requested size: 358.50227pt x 256.0084pt.
-<../immagini/mn/wireshark.png, id=390, 603.0028pt x 432.11438pt>
-File: ../immagini/mn/wireshark.png Graphic file (type png)
-<use ../immagini/mn/wireshark.png>
-Package pdftex.def Info: ../immagini/mn/wireshark.png  used on input line 209.
-(pdftex.def)             Requested size: 358.50227pt x 256.90353pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [25 <../immagini/mn/iperf.PNG>]
-
-LaTeX Warning: Text page 26 contains only floats.
-
-
-Underfull \vbox (badness 2277) has occurred while \output is active []
-
- [26 <../immagini/mn/wireshark1.PNG> <../immagini/mn/wireshark.PNG>] [27]
-\openout2 = `Capitolo_3.aux'.
-
- (./Capitolo_3.tex [28
-
-
-
-
-]
-Capitolo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-<../immagini/esempio/topo.png, id=415, 1053.9375pt x 668.4975pt>
-File: ../immagini/esempio/topo.png Graphic file (type png)
-<use ../immagini/esempio/topo.png>
-Package pdftex.def Info: ../immagini/esempio/topo.png  used on input line 22.
-(pdftex.def)             Requested size: 398.33858pt x 252.66483pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--25
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-[31 <../immagini/esempio/topo.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--69
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+[8 <../immagini/types.png>] [9 <../immagini/semantic_segmentation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
@@ -1030,211 +773,158 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
+) [10]
+\openout2 = `Capitolo_2.aux'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--88
+ (./Capitolo_2.tex
+Capitolo 2.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-(c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-<../immagini/esempio/stp_off.png, id=530, 251.43938pt x 61.73062pt>
-File: ../immagini/esempio/stp_off.png Graphic file (type png)
-<use ../immagini/esempio/stp_off.png>
-Package pdftex.def Info: ../immagini/esempio/stp_off.png  used on input line 16
-8.
-(pdftex.def)             Requested size: 358.50227pt x 88.01506pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--171
-
- []
+[11
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--171
+
+
+]
+<../immagini/vive.jpg, id=225, 3293.30376pt x 1502.61375pt>
+File: ../immagini/vive.jpg Graphic file (type jpg)
+<use ../immagini/vive.jpg>
+Package pdftex.def Info: ../immagini/vive.jpg  used on input line 11.
+(pdftex.def)             Requested size: 398.33858pt x 181.7274pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--20
 
  []
 
+[12] [13 <../immagini/vive.jpg>] [14]
+<../immagini/meshpoint.jpg, id=241, 764.8575pt x 416.30531pt>
+File: ../immagini/meshpoint.jpg Graphic file (type jpg)
+<use ../immagini/meshpoint.jpg>
+Package pdftex.def Info: ../immagini/meshpoint.jpg  used on input line 42.
+(pdftex.def)             Requested size: 318.67207pt x 173.44952pt.
+ [15 <../immagini/meshpoint.jpg>])
+[16]
+\openout2 = `Capitolo_3.aux'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-[36 <../immagini/esempio/stp_off.PNG>]
-<../immagini/esempio/stp_on.png, id=537, 242.40562pt x 61.73062pt>
-File: ../immagini/esempio/stp_on.png Graphic file (type png)
-<use ../immagini/esempio/stp_on.png>
-Package pdftex.def Info: ../immagini/esempio/stp_on.png  used on input line 185
-.
-(pdftex.def)             Requested size: 358.50227pt x 91.30617pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--188
-
- []
+ (./Capitolo_3.tex
+Capitolo 3.
+) [17
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--188
 
- []
 
-<../immagini/esempio/ping_stp.png, id=538, 359.09157pt x 216.05719pt>
-File: ../immagini/esempio/ping_stp.png Graphic file (type png)
-<use ../immagini/esempio/ping_stp.png>
-Package pdftex.def Info: ../immagini/esempio/ping_stp.png  used on input line 1
-95.
-(pdftex.def)             Requested size: 358.50227pt x 215.71707pt.
-<../immagini/esempio/ping_ftp.png, id=539, 357.58594pt x 213.79875pt>
-File: ../immagini/esempio/ping_ftp.png Graphic file (type png)
-<use ../immagini/esempio/ping_ftp.png>
-Package pdftex.def Info: ../immagini/esempio/ping_ftp.png  used on input line 2
-01.
-(pdftex.def)             Requested size: 358.50227pt x 214.35933pt.
-[37 <../immagini/esempio/stp_on.PNG>]
-<../immagini/esempio/ping_5000.png, id=552, 356.83313pt x 212.29312pt>
-File: ../immagini/esempio/ping_5000.png Graphic file (type png)
-<use ../immagini/esempio/ping_5000.png>
-Package pdftex.def Info: ../immagini/esempio/ping_5000.png  used on input line 
-207.
-(pdftex.def)             Requested size: 358.50227pt x 213.29678pt.
-<../immagini/esempio/ping_medio.png, id=553, 164.0529pt x 96.8418pt>
-File: ../immagini/esempio/ping_medio.png Graphic file (type png)
-<use ../immagini/esempio/ping_medio.png>
-Package pdftex.def Info: ../immagini/esempio/ping_medio.png  used on input line
- 213.
-(pdftex.def)             Requested size: 358.50227pt x 211.65318pt.
+]
+\openout2 = `Capitolo_4.aux'.
 
-Underfull \vbox (badness 2237) has occurred while \output is active []
+ (./Capitolo_4.tex [18
 
- [38 <../immagini/esempio/ping_stp.PNG> <../immagini/esempio/ping_ftp.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
- []
 
-<../immagini/esempio/bw_stp.png, id=560, 358.33875pt x 213.04594pt>
-File: ../immagini/esempio/bw_stp.png Graphic file (type png)
-<use ../immagini/esempio/bw_stp.png>
-Package pdftex.def Info: ../immagini/esempio/bw_stp.png  used on input line 221
-.
-(pdftex.def)             Requested size: 398.33858pt x 236.84137pt.
-<../immagini/esempio/bw_ftp.png, id=561, 358.33875pt x 214.55156pt>
-File: ../immagini/esempio/bw_ftp.png Graphic file (type png)
-<use ../immagini/esempio/bw_ftp.png>
-Package pdftex.def Info: ../immagini/esempio/bw_ftp.png  used on input line 227
-.
-(pdftex.def)             Requested size: 398.33858pt x 238.51515pt.
-[39 <../immagini/esempio/ping_5000.PNG> <../immagini/esempio/ping_medio.png>]
-<../immagini/esempio/bw_5000.png, id=568, 359.84438pt x 216.81pt>
-File: ../immagini/esempio/bw_5000.png Graphic file (type png)
-<use ../immagini/esempio/bw_5000.png>
-Package pdftex.def Info: ../immagini/esempio/bw_5000.png  used on input line 23
-3.
-(pdftex.def)             Requested size: 398.33858pt x 240.02345pt.
-<../immagini/esempio/bw_media.png, id=569, 162.3666pt x 99.9735pt>
-File: ../immagini/esempio/bw_media.png Graphic file (type png)
-<use ../immagini/esempio/bw_media.png>
-Package pdftex.def Info: ../immagini/esempio/bw_media.png  used on input line 2
-39.
-(pdftex.def)             Requested size: 398.33858pt x 245.30023pt.
 
-[40 <../immagini/esempio/bw_stp.PNG> <../immagini/esempio/bw_ftp.PNG>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41 <../immagini/esempio/bw_5000.PNG> <../immagini/esempio/bw_media.png>] [42]
+]
+Capitolo 4.
+) [19]
 \openout2 = `Conclusione.aux'.
 
+ (./Conclusione.tex [20
 
-(./Conclusione.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 6--133
 
+
+
+]) [21] (./tesi.bbl [22
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+6.
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+[]\T1/cmr/m/n/12 ``Neural net-work.''  []$\T1/cmtt/m/n/12 https : / / deepai . 
+org /
  []
 
-[43
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
+[]\T1/cmr/m/n/12 ``Alla sco-per-ta del deep lear-ning: si-gni-fi-ca-to, esem-pi
+ e
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 39--42
+\T1/cmr/m/n/12 ap-pli-ca-zio-ni.''  []$\T1/cmtt/m/n/12 https : / / blog . osser
+vatori . net / it _ it /
+ []
 
+[23]
+Underfull \hbox (badness 1259) in paragraph at lines 58--60
+[]\T1/cmr/m/n/12 ``Stemvr do-cu-men-ta-zio-ne.''  []$\T1/cmtt/m/n/12 https : / 
+/ partner . steamgames . com / doc /
+ []
 
-] (./tesi.bbl [44
-
-
-
-]) [45]
+) [24]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     147.
+(LaTeX3)     148.
 
- (./tesi.aux (./Pagina_Iniziale.aux)
-(./Introduzione.aux) (./Capitolo_1.aux) (./Capitolo_2.aux) (./Capitolo_3.aux)
+ (./tesi.aux (./Pagina_Iniziale.aux) (./Introduzione.aux)
+(./Capitolo_1.aux) (./Capitolo_2.aux) (./Capitolo_3.aux) (./Capitolo_4.aux)
 (./Conclusione.aux))
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: F1CFD9E5F3CC9FB39F51C0998828C53E;1554.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: F557917DF4DA6302D42A4BE88EDA6E42;1107.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12731 strings out of 479383
- 196755 string characters out of 5873325
- 814217 words of memory out of 5000000
- 29297 multiletter control sequences out of 15000+600000
- 419271 words of font info for 57 fonts, out of 8000000 for 9000
+ 11860 strings out of 479383
+ 184440 string characters out of 5873325
+ 742441 words of memory out of 5000000
+ 28610 multiletter control sequences out of 15000+600000
+ 417464 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,115p,726b,2088s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,7n,115p,1013b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/
-texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2020/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
-cm-super/sfbx1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/s
-fbx2488.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pf
-b><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texl
-ive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2020/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2020/texmf-dist/
-fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2020/texmf-dist/fonts/type
-1/public/cm-super/sfti1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/c
-m-super/sftt1095.pfb>
-Output written on tesi.pdf (51 pages, 1749943 bytes).
+texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist
+/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
+cm-super/sfbx2488.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/s
+fcc1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pf
+b><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb><c:/texlive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2020/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on tesi.pdf (30 pages, 2094058 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 232 named destinations out of 1000 (max. 500000)
- 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

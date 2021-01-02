@@ -1,139 +1,85 @@
-\chapter{Il Network Slicing}\label{ch:capitolo1}
-
-\section{Concetti principali}\label{ch:1.1}
-La sempre più rapida evoluzione e innovazione delle tecnologie ha portato, negli anni, a modificare radicalmente le prestazioni ed i servizi richiesti alle infrastrutture di telecomunicazioni.\\
-Internet, che ad oggi risulta la rete più diffusa al mondo, non rispecchia più le necessità  degli utilizzatori. Alla sua nascita, infatti, la Qualità del Servizio (QoS) richiesta era decisamente inferiore. Per questo motivo, la filosofia su cui è basato Internet è detta \textit{best-effort}: il sistema farà tutto il possibile per compiere un'operazione, ma non è garantito se e come questa sarà portata a termine.\\
-Tuttavia, l'evoluzione di applicazioni e servizi ha reso necessaria una maggiore flessibilità delle prestazioni fornite dalla rete. A seconda dei casi, infatti, un servizio potrebbe richiedere bassa latenza, altri potrebbero avere bisogno di alto throughput. L'architettura e i protocolli di Internet non sono pensati per questo scopo e fornire prestazioni di questo tipo richiederebbe modifiche sostanziali.
-\cite{libro1}\\
-Da queste necessità nasce l'idea del Network Slicing.\\
-Una \textit{Network slice} è un insieme di risorse che compongono una rete in grado di soddisfare le necessità di una specifica applicazione. Questo comportamento si può ottenere utilizzando diverse architetture e tecnologie che, insieme, ci permettono di manipolare il comportamento della rete.\\
-
-\subsection{Software Defined Networking}\label{ch:1.1.1} 
-Uno dei concetti alla base dell'idea del NS è il \textit{Software Defined Networking (SDN)}, ovvero la costruzione di reti in cui il \textit{routing} ed il \textit{forwarding} sono gestiti separatamente.\\
-L'SDN prevede infatti la presenza di uno o più controller, che gestiscono il routing ed il comportamento complessivo della rete. I vantaggi che un approccio di questo tipo comporta sono molteplici.
+\chapter{Motivazioni alla base del lavoro}\label{ch:capitolo1}
+\section{Machine Learning}
+Negli ultimi decenni il Machine Learning si è imposto diventando uno dei pilastri della tecnologia e ricoprendo un ruolo piuttosto centrale, anche se nascosto, della nostra vita quotidiana. La crescita di questo settore è destinata a non fermarsi presto sopratutto grazie alla sempre maggiore quantità di dati che diventano disponibili.\\
+L'idea di base è quella dell'\textit{apprendimento automatico}, ovvero fornire ai computer l'abilità di imparare alcune operazioni senza essere esplicitamente programmati, sviluppando una propria logica basata solo ed esclusivamente su dei set di dati che vengono elaborati con degli algoritmi. \\
+Le varie tecniche di apprendimento si classificano in tre diversi gruppi \cite{AI}:
 \begin{itemize}
-	
-	\item La rete non è vincolata all'infrastruttura fisica. Il suo comportamento, definito via software, può quindi essere facilmente modificato e riprogrammato.
-	
-	\item La centralizzazione dell'intelligenza della rete stessa permette al gestore di operare solo sul controller, senza la necessità di intervenire su ogni singolo nodo. Inoltre, il controller permette di monitorare e supervisionare agevolmente l'intera infrastruttura \cite{6461195}	
-	
+	\item \textbf{Apprendimento supervisionato} i dati che vengono forniti al modello sono costituiti da una coppia di informazioni: un possibile input e il relativo output. Il sistema in questo caso deve estrarre una regola generale per associare ad ogni input il corrispettivo output corretto.
+	\item \textbf{Apprendimento non supervisionato} vengono forniti al modello soltanto gli input senza i relativi output. Il sistema dovrà quindi identificare un pattern per cercare di effettuare ragionamenti e previsioni sugli input successivi. Le classi in questo caso dovranno essere apprese in maniera autonoma. 
+	\item \textbf{Apprendimento per rinforzo} non ci sono dati. Il modello deve interagire con un ambiente dinamico nel quale cerca di raggiungere un obiettivo (ad esempio il superamento di un livello in un videogioco o la guida di un veicolo) ricevendo soltanto una valutazione sulle sue azioni e non informazioni su quali azioni compiere e quando compierle.
+\end{itemize}
+\subsection{Reti Neurali e Deep Learning}
+Tra i diversi approcci e tecniche per la progettazione e l'implementazione di sistemi per l'apprendimento automatico troviamo le \textit{reti neurali} e il \textit{deep learning}.\\\\
+Una \textit{rete neurale} o neural network è un sistema di apprendimento che utilizza una rete di funzioni per comprendere e tradurre un input di dati di una forma in un output desiderato, solitamente in un'altra forma. Una rete neurale è composta da elementi chiamati neuroni disposti su vari livelli, questi ricevono degli stimoli e li elaborano attivando o meno le loro uscite.  Normalmente gli strati che formano la rete sono tre (vedi figura 1.1), il primo livello detto \textit{input units} è composto dai neuroni che ricevono i segnali dall'ambiente esterno, il secondo strato,\textit{hidden units}, può essere composto anche da più colonne di neuroni e si preoccupa dell'elaborazione vera e propria, l'ultimo strato invece \textit{output units} fornisce la risposta della rete.\\
+Il concetto di rete neurale artificiale ha preso ispirazione dalla biologia umana in particolare dal modo in cui funzionano e collaborano i neuroni del cervello umano per comprendere gli input sensoriali \cite{neuralnet}.\\\\ 
+Il \textit{Deep Learning}, o apprendimento approfondito, è il ramo più avanzato del Machine Learning. Si tratta di un insieme di tecniche basate su reti neurali artificiali organizzate in diversi strati: ogni strato calcola i valori per quello successivo, in modo da elaborare l’informazione in maniera sempre più completa \cite{polimi}. Questo approccio trae ispirazione da alcune zone del cervello umano che si occupano della visione e dell'udito cercando di modellarne la struttura. Sopratutto per questo motivo il deep learning ha avuto maggior successo nel campo della \textit{computer vision} e del riconoscimento vocale o \textit{speech recognition}.
+Se i dati a disposizione sono sufficienti il sistema è in grado di estrarre un modello corretto anche senza un pre-processamento dei dati, come invece avviene per le tecniche tradizionali di Machine Learning. In altre parole, il Deep Learning è una tecnica di apprendimento in cui reti neurali vengono esposte a vaste quantità di dati, in modo che possano imparare a svolgere compiti.\\\\
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{../immagini/ReteNeu}
+	\caption[Rete Neurale]{Struttura di una rete neurale generica }
+	\label{fig:reteneu}
+\end{figure}
+\subsection{Il processo di apprendimento}
+Come detto nel primo paragrafo, gli algoritmi di apprendimento automatico che necessitano di dati per essere applicati sono quelli supervisionati e non supervisionati. La fase di apprendimento avviene con i seguenti passaggi \cite{ML}: 
+\begin{itemize}
+	\item \textbf{Pre-elaborazione}: i dati, per essere forniti come input al modello, devono essere trasformati pertanto la pre-elaborazione dei dati è uno dei passi cruciali di qualsiasi applicazione di apprendimento automatico. Dai dati grezzi possiamo estrarre alcune caratteristiche significative che possono essere, nel caso in cui i dati siano delle immagini, i colori, la tonalità, l'altezza la larghezza e la profondità. Molti algoritmi di apprendimento automatico richiedono anche che, per ottenere le massime prestazioni, le caratteristiche scelte adottino la stessa scala, il che spesso viene ottenuto trasformando le caratteristiche in un intervallo [0, 1]. \\
+	Per determinare	la bontà del nostro algoritmo spesso si decide di suddividere il dataset in due set distinti, uno di addestramento e uno di test. Useremo il primo per informare e ottimizzare il modello mentre teniamo da parte il secondo per valutare il modello finale.
+	\item \textbf{Inizializzazione del modello}: bisogna assegnare dei valori ai parametri del modello, questi possono essere scelti randomicamente oppure ereditati da altri modelli di deep learning.  
+	\item \textbf{Training}: ogni dato viene fornito in ingresso al modello il quale calcola una \textit{score function} che assegna al dato diversi punteggi (nel caso di classificatore posso essere i valori di appartenenza alle sue categorie) in seguito viene valutata anche la differenza tra valori predetti e quelli reali.
+	\item \textbf{Test}: la rete processa i dati di test e viene eseguita anche una valutazione del modello. 
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../immagini/552578-sdn-graphic-blue-910}
-	\caption[Software Defined Network]{Gestione software dell'infrastruttura fisica in una rete di tipo SDN}
-	\label{fig:552578-sdn-graphic-blue-910}
+	\includegraphics[width=1.1\linewidth]{../immagini/mlprocess}
+	\caption[Processo di apprendimento]{Tipico diagramma di flusso per l'impiego dell'apprendimento automatico }
+	\label{fig:mlprocess}
 \end{figure}
+La presenza di dati è quindi fondamentale per supervisionare il training e questi devono essere forniti in quantità sufficiente o altrimenti, se il campione di dati è troppo piccolo o la qualità dei dati non rappresenta correttamente la realtà, i modelli di Machine Learning saranno inutilizzabili. 
+\subsection{Dataset}
+Per questa ragione sono stati creati innumerevoli \textit{datasets}, sopratutto negli ultimi anni, che raccolgono enormi quantità di dati specifici per un compito con le relative annotazioni. \\
+Di seguito verranno presentati i dataset utilizzati come reference durante il lavoro. 
+\begin{itemize}
+\item Il dataset di \textbf{Matterport3D} \cite{Matter} (Figura 1.2) fornisce dati per il training riguardo scenari indoor. I dati sono stati prelevati da 90 edifici mantenendo anche una certa varietà di ambienti. Il dataset si compone di 194,400 immagini RGB-D ovvero combinazioni di immagini RGB con le loro \textit{depth image} nelle quali ad ogni pixel viene anche associata la distanza tra piano dell'immagine e oggetto corrispondente. Vengono forniti anche i dati annotati semanticamente e per ogni scena anche una \textit{mesh} dell'ambiente. 
 
-\subsection{Virtualized Network Functions}\label{ch:1.1.2}
-Un altro elemento cardine per il Network Slicing è la \textit{virtualizzazione delle funzioni di rete (NFV)}. Le funzioni di rete, infatti, vengono solitamente implementate tramite hardware specifico in ogni nodo. Gli svantaggi di questa architettura includono l'alto prezzo dell'energia necessaria, un maggiore costo dovuto alla progettazione ed alla produzione dell'hardware stesso e l'inevitabile sempre più corto ciclo di vita di quest'ultimo.\\
-La NFV si pone come obiettivo la soluzione di questi problemi, implementando le stesse funzioni di rete tramite software. Le \textit{funzioni di rete virtualizzate} non necessitano quindi di una specifica infrastruttura fisica, ma sono in grado di essere memorizzate ed eseguite da generici switch, server e data center, tramite la creazione su di essi di una o più macchine virtuali. Questo, insieme alla possibilità di poter spostare questi elementi hardware in qualunque nodo della rete, rende estremamente più pratica, economica ed efficiente la gestione della rete stessa. \cite{telecom_nfv}
+\item \textbf{KITTI } fornisce invece un ampio set di dati riguardanti scenari outdoor. Comprende diverse categorie tra cui 'Road', 'City', 'Residential', 'Campus' e 'Person'. Per ogni sequenza vengono forniti dati grezzi, relative annotazioni e un file di calibrazione. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../immagini/matterport3d}
+	\caption[Matterport3d]{Il dataset Matterport }
+	\label{fig:mlprocess}
+\end{figure}
+\end{itemize}
+\section{Segmentazione semantica}
+La \textit{computer vision}, anche grazie al deep learning, negli ultimi anni ha visto accrescere sempre di più l'interesse nei suoi confronti arrivando al punto in cui risulta essere molto più precisa dell'uomo in alcuni compiti \cite{Geirhos2017a}. I campi in cui questa risulta più usata sono la classificazione di immagini, il rilevamento di oggetti e la segmentazione elencati in ordine di difficoltà.\\
+Se parliamo di \textit{classificazione di immagini} siamo soltanto interessati ad ottenere le etichette di tutti gli oggetti presenti in un immagine. Quando invece abbiamo a che fare con l'\textit{object detection} oltre che alla label vogliamo avere anche informazioni sulla posizione degli oggetti che ci viene fornita con dei bounding boxes ovvero dei riquadri che delimitano il soggetto. Facendo un ulteriore passo avanti in termini di precisione troviamo la \textit{segmentazione semantica} che ha come obiettivo quello di rilevare il confine esatto degli elementi nell'immagine.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{../immagini/nfv}
-	\caption[Network Function Virtualization, NFV]{Differenze tra l'hardware specifico richiesto normalmente dalle funzioni di rete e da quello generico utilizzato dalle VNF}
-	\label{fig:nfv}
+	\includegraphics[width=1\linewidth]{../immagini/types}
+	\caption[Task principali della Computer Vision]{Sinistra: esempio di classificazione. Immagini centrali: esempi di object detection. Destra: esempio di segmentazione semantica }
+	\label{fig:types}
 \end{figure}
 
-\section{Architetture}\label{ch:1.2}
-Lo scopo del Network Slicing è fare in modo che un'infrastruttura possa suddividere e organizzare le proprie risorse affinché un'applicazione abbia a disposizione una rete ottimizzata per le sue richieste.\\
-Per fare ciò, queste architetture sono strutturate su 3 livelli:
-\begin{itemize}
-	
-	\item \textit{Service Instance Layer}\\
-	Rappresenta il servizio che deve essere supportato dalla rete. Ogni servizio è rappresentato da una Service Instance.
-	
-	\item \textit{Network Slice Instance Layer}\\
-	Racchiude i vari Network Slices, ovvero le risorse allocate per una determinata Service Instance. Una Network Slice Instance può essere condivisa tra più SI.
-	
-	\item \textit{Resource Layer}\\
-	Rappresenta le risorse e le funzioni di rete disponibili sull'infrastruttura, che verranno suddivise e assegnate in base al servizio richiesto.
-	
-	
-\end{itemize}
-L'intera architettura viene "orchestrata" da uno o più \textit{controller}, che hanno il compito di creare e organizzare le varie Istanze, stanziando le risorse necessarie per ciascun servizio.
-\cite{NSintro}
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../immagini/510px-Generic_5G_network_slicing_framework.svg}
-	\caption[Architettura Network Slicing]{Struttura delle architetture di rete basate sul Network Slicing}
-	\label{fig:510px-generic5gnetworkslicingframework}
-\end{figure}\\
-L'utilizzo di un solo controller può costituire un collo di bottiglia per le prestazioni della rete in caso di compiti particolarmente complessi. Per questo motivo può risultare efficace dividere i compiti tra più controller, assegnando a ciascuno la gestione di determinate funzionalità.
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{../immagini/nslc}
-	\caption[Network Slice life cycle]{Life Cycle di una Network Slice Instance}
-	\label{fig:nslc}
-\end{figure}\\\\
-Il processo di creazione di un'Istanza inizia con un'operazione di progettazione e preparazione della stessa. Viene poi effettuata una richiesta di creazione, e attivazione della Slice. Una volta attivata, questa viene monitorata e modificata. Quando non è più necessaria, infine, viene disattivata e le risorse vengono rese nuovamente disponibili.\\\\
-È importante sottolineare come le Slices siano tra loro isolate. Questo è un criterio fondamentale, che permette una maggiore privacy, impedendo di accedere ai dati delle altre Slices, e garantisce che le prestazioni di una Slice non influiscano sulle altre.\\\\
-Il Network Slicing può essere implementato  in diversi modi. Un'infrastruttura con un unico proprietario avrà una gestione diversa rispetto ad una condivisa. Allo stesso modo, a seconda delle necessità, potrebbero essere necessari più o meno controller per gestire la rete.
-\begin{itemize}
-	
-	\item \textbf{Singolo Proprietario, singolo controller}\\
-	Questo è il caso più semplice, applicabile a porzioni ristrette della rete. In un'architettura di questo genere il Controller ha il compito di orchestrare direttamente l'infrastruttura e controllare direttamente tutte le Slices. Questo approccio può rappresentare un collo di bottiglia per l'affidabilità e per le prestazioni.
-	\item \textbf{Singolo proprietario, più clienti}\\
-	Quando risulta necessario aumentare il numero di quindi di controller, questi non possono più agire direttamente sulla rete. È infatti necessario inserire un intermediario tra di essi: questo ruolo viene svolto da un \textit{SDN proxy}, solitamente gestito dal proprietario della rete. Tra i vantaggi di questa architettura possiamo evidenziare la possibilità di permettere a vari utilizzatori di utilizzare i propri controller su un'infrastruttura fisica condivisa, mantenendo comunque l'isolamento tra le varie Istanze
-	\item \textbf{Più proprietari}\\
-	I precedenti casi sono riferiti a situazioni in cui l'infrastruttura fisica sottostante risulti sotto il controllo di un unico proprietario. Le Slices possono quindi essere composte semplicemente isolando e dividendo i rami della rete, assegnandoli alle varie Istanze.\\
-	Tuttavia, nel caso in cui si vogliano utilizzare infrastrutture fisiche di proprietari diversi è necessario un ulteriore livello di astrazione, che permetta di rappresentarle come un'unica infrastruttura virtuale. Si crea così il concetto di \textit{rete virtuale programmabile}. \cite{libro1}\\
-\end{itemize}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{../immagini/arch1}
-	\caption[Architettura NS a singolo controller]{Struttura di un'architettura basata su Network Slicing a singolo proprietario e singolo controller}
-	\label{fig:arch1}
+	\includegraphics[width=1\linewidth]{../immagini/semantic_segmentation}
+	\caption[Segmentazione semantica]{Esempio di segmentazione semantica su due immagini }
+	\label{fig:types}
 \end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{../immagini/arch2}
-	\caption[Architettura NS a doppio controller]{Struttura di un'architettura basata su Network Slicing a singolo proprietario e doppio controller}
-	\label{fig:arch1}
-\end{figure}
+Con la \textit{segmentazione semantica} quindi si vuole andare ad associare ad ogni pixel dell'immagine una categoria presa da un set prestabilito, nell'esempio di sinistra nella Figura 1.4 possiamo vedere che tutti i pixel appartenenti al gatto vengono colorati di giallo, tutti quelli appartenenti al terreno vengono colorati di verde, ecc. Ovviamente il numero di categorie da cui andare a pescare è arbitrario, la stessa immagine potrebbe essere segmentata anche in soltanto due categorie (una per il soggetto e una per lo sfondo). \\
+La segmentazione semantica però non fa distinzione tra le varie istanze, nelle immagini di destra abbiamo due mucche, i pixel vengono assegnati indipendentemente e non c'è alcuna distinzione tra le due che però avviene se decidiamo di trattare l'immagine con un approccio di \textit{instance segmentation}.\\\\
+La definizione data in precedenza vale per immagini o video, questa però può essere estesa facilmente al caso di dati 3D. In caso di \textit{point-cloud} si vuole assegnare una categoria ad ogni suo punto mentre, se i nostri dati sono sotto forma di \textit{mesh}, la categoria va assegnata ad ogni faccia.\\\\
+Essendo più precisa rispetto alle altre è particolarmente indicata per quelle applicazioni nei settori che richiedono una certo livello di affidabilità come ad esempio guida autonoma, rilevazione di difetti nei materiali e prodotti, imaging medicale e nella visione robotica per identificare e muoversi tra oggetti e terreni. 
+\subsection{Fase di annotazione}
+La fase di annotazione è però un processo noioso, molto lento e inoltre richiede anche una certa dimestichezza con l'utilizzo di alcuni programmi. Questi problemi si aggravano nel caso in cui decidiamo di lavorare in tre dimensioni dove si aggiunge anche la difficoltà di orientarsi in uno spazio tridimensionale. Al giorno d'oggi esistono due possibili strade da percorrere quando si decide di annotare dati per un \textit{dataset} riguardante la segmentazione semantica 3D ovvero: 
+\begin{itemize}
+	\item \textbf{Utilizzare programmi open source} come ad esempio \textit{Blender} o \textit{MeshLab} che però richiedono una certa esperienza nell'utilizzo di motori grafici 3D. 
+	\item \textbf{Affidarsi a delle aziende} che mettono a disposizione dei tool per annotare dati o che si offrono di annotarli al tuo posto, come ad esempio \textit{Scale} o \textit{Dataloop}, dietro però compenso.
+\end{itemize}
+Per queste ragioni è nato \textit{Shooting Labels} il primo strumento per l'annotazione semantica 3D che sfrutta la realtà virtuale per rendere più semplice e intuitiva questa fase. Utilizzando questo strumento il giocatore non necessita di nessuna competenza specifica ma indossando un headset è subito proiettato all'interno della scena nella quale utilizzando alcune armi "spara" i colori associati alle varie categorie sulle superfici etichettandole. Il lavoro diventa quindi accessibile a tutti e anche più veloce in quanto più immediata l'interazione con l'ambiente circostante rispetto all'utilizzo di altri software che non sfruttano la realtà virtuale. \\\\
 
-\section{Utilizzi e vantaggi}\label{ch:1.3}
-L'idea del Network Slicing nasce con una strettissima correlazione con il 5G. Si prevede, infatti, che le reti di quinta generazione saranno in grado di creare grandi opportunità per nuove aziende e servizi. Questo porterà ad una grandissima varietà di richieste nei confronti della rete, che dovrà essere in grado di soddisfare necessità molto diverse tra loro.\\
-Il Network Slicing si pone come una soluzione ideale a questo problema. La sua grande versatilità, infatti, risulta lo strumento perfetto per accontentare un'ampia gamma di richieste di varia natura. \cite{NS5g}\\\\
-Queste tecnologie sono destinate ad innovare molte tipologie di comunicazione. Si prevede che un grosso impatto sarà percepito dall'industria e dai mercati verticali. Una rete flessibile e prestante ha infatti un'influenza significativa sulla produzione e permette di ottimizzare l'efficienza su tutti i livelli della filiera.\\
-Un operatore può fornire al singolo cliente la gestione della propria Network Slice, permettendo di \textit{orchestrarla} a seconda delle proprie necessità. Un cliente può essere rappresentato da un'azienda che voglia basare la sua rete interna su un'infrastruttura di questo genere.\\\\
-Tra i molteplici mercati che trarrebbero vantaggio da queste tecnologie possiamo evidenziare i seguenti.
-\begin{itemize}
-	\item \textbf{Automotive}\\
-	La potenzialità più interessante delle telecomunicazioni nel campo dell'automotive è senza dubbio la comunicazione \textit{vehicle-to-everything}.\\
-	Con questo termine si intende la possibilità di un veicolo di comunicare con diversi interlocutori in grado di fornire informazioni utili per comfort e sicurezza:
-	\begin{itemize}
-		\item L'\textit{Infotainment} è al giorno d'oggi una caratteristica imprescindibile di ogni veicolo. Una efficace comunicazione tra il veicolo e i passeggeri è fondamentale per una guida più attenta e confortevole.
-		\item È opportuno anche che il veicolo sia in grado di comunicare continuamente con la casa madre, per mantenere il software e i dati sempre aggiornati.
-		\item Per una maggiore sicurezza è importante garantire una comunicazione \textit{vehicle-to-vehicle} a bassissima latenza, per permettere di conoscere posizione e velocità reciproche e avere a disposizione un maggior numero possibile di dati riguardanti le condizioni della strada e del traffico.
-		\item Sarebbe infine possibile offrire un'ulteriore sicurezza permettendo al veicolo di comunicare con vari sensori a terra in grado di monitorare traffico, visibilità o condizioni del manto stradale.
-	\end{itemize}
-	L'utilizzo per questo scopo di una rete pubblica 5g ottimizzata tramite Network Slicing permetterebbe di avere una maggiore copertura, maggiori prestazioni e un costo inferiore.
-	
-	\item \textbf{Energia}\\
-	Una delle più importanti nuove frontiere nel campo dell'energia è rappresentata dalle \textit{Smart Grids}.\\Questo termine sta ad indicare una rete di distribuzione di energia supportata da un costante flusso di informazioni, in grado di gestire in maniera intelligente la distribuzione dell'elettricità, evitando sovraccarichi e minimizzando le perdite.\\Inoltre, con la diffusione degli impianti fotovoltaici privati, la rete deve essere in grado di convogliare adeguatamente al proprio interno l'energia prodotta.\\
-	Un'infrastruttura che permetta queste operazioni al momento non esiste. Una rete 5g supportata dal Network Slicing sarebbe in grado di svolgere efficacemente queste funzioni, garantendo le prestazioni richieste.\\
-	Le necessità di una rete in questo ambito sono una zona di copertura molto estesa, una bassa latenza e una grande affidabilità, anche in situazioni di emergenza.
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.75\linewidth]{../immagini/vehicle-to-everything-slide12}
-		\caption[Vehicle-to-everything]{Comunicazioni di tipo Vehicle-to-Everything (V2X)}
-		\label{fig:vehicle-to-everything-slide12}
-	\end{figure}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.75\linewidth]{../immagini/0_7i2ht2hZquYBwybh}
-		\caption[Smart Grids]{Produzione e gestione dell'energia tramite Smart Grid, supportata da una rete di informazione}
-		\label{fig:07i2ht2hzquybwybh}
-	\end{figure}\\
-	
-	\item \textbf{Sanità}\\
-	In ambito sanitario, l'implementazione di reti flessibili e prestanti aprirebbe tantissime opportunità.\\
-	Una tra le novità sarebbe sicuramente la possibilità di monitorare in tempo reale le strumentazioni e i pazienti dentro e fuori gli ospedali.\\
-	Tuttavia, risulta ancora più interessante l'idea della \textit{chirurgia da remoto}. Avere a disposizione una rete in grado di fornire una bassissima latenza, infatti, permetterebbe ai chirurghi di operare pazienti senza essere fisicamente in ospedale. Questo risulterebbe fondamentale in caso di operazioni specialistiche eseguite da esperti, riducendo drasticamente i costi per i pazienti ed eventualmente salvandone la vita.
-	
-	\item \textbf{IoT e Smart Cities}\\
-	IoT e Smart Cities sono campi in continua espansione, per i quali una connessione su aree di grandi dimensioni risulta fondamentale. L'idea di base è di avere una vasta rete di sensori che permettano di raccogliere dati e gestire di conseguenza svariati parametri, come illuminazione o riscaldamento, in modo da avere un funzionamento ottimale e minimizzare i consumi.\\A differenza delle applicazioni precedentemente citate, la latenza non è un requisito stringente. È tuttavia fondamentale che i vari elementi della rete abbiano un basso dispendio energetico e che la copertura sia sufficiente a garantire che tutti i sensori possano comunicare.  \cite{5g5}\\
-	
-\end{itemize}I vantaggi apportati dal Network Slicing sono quindi numerosi e di diversa natura, a seconda del servizio richiesto e della necessità del consumatore.\\\\
-Nel capitolo 3 verranno confrontate le prestazioni di una rete classica con quelle di una rete costruita seguendo i principi del Network Slicing.
+
+
+
+
